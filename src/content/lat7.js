@@ -38,7 +38,7 @@ const navbarResponsif = () => {
                     <hr/>
                     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                         <div className="container-fluid">
-                            <Link to={'/latihan-7'} className='navbar-brand'>
+                            <Link to={'/myreactlat/latihan-7'} className='navbar-brand'>
                                 Navbar Responsif
                             </Link>
 

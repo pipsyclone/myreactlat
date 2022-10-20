@@ -1,23 +1,23 @@
 const Menu = {
     menu : [
         {
-            url: '/latihan-7',
+            url: '/myreactlat/latihan-7',
             name: 'Home'
         },
         {
-            url: '/',
+            url: '/myreactlat/',
             name: 'About'
         },
         {
-            url: '/',
+            url: '/myreactlat/',
             name: 'Project'
         },
         {
-            url: '/',
+            url: '/myreactlat/',
             name: 'Contact'
         },
         {
-            url: '/',
+            url: '/myreactlat/',
             name: 'Footer'
         },
     ]

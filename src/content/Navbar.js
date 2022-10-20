@@ -14,13 +14,13 @@ const Navbar = () => {
                     <div className="navbar-nav ms-auto">
                         <Link className="nav-link active" to={"/myreactlat"}>Home</Link>
                         <Link className="nav-link" to={"/error-page"}>Error Page 404</Link>
-                        <Link className="nav-link" to={"/latihan-1"}>Latihan 1</Link>
-                        <Link className="nav-link" to={"/latihan-2"}>latihan 2</Link>
-                        <Link className="nav-link" to={"/latihan-3"}>latihan 3</Link>
-                        <Link className="nav-link" to={"/latihan-4"}>latihan 4</Link>
-                        <Link className="nav-link" to={"/latihan-5"}>latihan 5</Link>
-                        <Link className="nav-link" to={"/latihan-6"}>latihan 6</Link>
-                        <Link className="nav-link" to={"/latihan-7"}>latihan 7</Link>
+                        <Link className="nav-link" to={"/myreactlat/latihan-1"}>Latihan 1</Link>
+                        <Link className="nav-link" to={"/myreactlat/latihan-2"}>latihan 2</Link>
+                        <Link className="nav-link" to={"/myreactlat/latihan-3"}>latihan 3</Link>
+                        <Link className="nav-link" to={"/myreactlat/latihan-4"}>latihan 4</Link>
+                        <Link className="nav-link" to={"/myreactlat/latihan-5"}>latihan 5</Link>
+                        <Link className="nav-link" to={"/myreactlat/latihan-6"}>latihan 6</Link>
+                        <Link className="nav-link" to={"/myreactlat/latihan-7"}>latihan 7</Link>
                     </div>
                 </div>
             </div>
