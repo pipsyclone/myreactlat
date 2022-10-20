@@ -1,4 +1,3 @@
-import {Fragment} from'react'
 import Helmet from 'react-helmet'
 import Script from '../interactive/script'
 
@@ -12,7 +11,7 @@ const Lat5 = () => {
     } = Script()
 
     return (
-        <Fragment>
+        <>
             <Helmet>
                 <title>Latihan 5 - Best Practices</title>
             </Helmet>
@@ -30,7 +29,7 @@ const Lat5 = () => {
                     <button className='btn btn-success me-3' onClick={() => changeColor()}>Change Color</button>
                 </div>
             </div>
-        </Fragment>
+        </>
     )
 }
 

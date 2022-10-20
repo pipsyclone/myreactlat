@@ -1,16 +1,10 @@
 import React, {Fragment, useRef } from 'react'
 import Helmet from 'react-helmet'
+import Script from '../interactive/script'
 
 function Lat3() {
 
-    const linkRef = useRef(null)
-    const gotoBot = (ref) => {
-        window.scrollTo({
-            top: ref.offsetTop,
-            left: 0,
-            behavior: 'smooth'
-        })
-    }
+    const {linkRef, gotoTop} = Script()
 
     return (
         <Fragment>
@@ -22,10 +16,12 @@ function Lat3() {
                 <div className='card-body'>
                     <h2>Latihan 3 - useRef</h2>
                     <br/>
-                    <span>Berfungsi untuk scroll dari atas ke bawah!</span>
+                    <span>Berfungsi untuk scroll dari bawah ke atas!</span>
                     <br/>
                     <hr/>
-                    <button className='btn btn-sm btn-primary rounded-0 mb-3' onClick={() => gotoBot(linkRef.current)}>Go To Bottom</button>
+                    <span ref={linkRef}>This Top!</span>
+                    <br />
+                    <br />
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quo accusamus beatae asperiores, magni dicta cumque nemo excepturi soluta id ea maxime? Amet similique rem sapiente dignissimos voluptatibus, est quas.
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quo accusamus beatae asperiores, magni dicta cumque nemo excepturi soluta id ea maxime? Amet similique rem sapiente dignissimos voluptatibus, est quas.
@@ -59,8 +55,8 @@ function Lat3() {
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quo accusamus beatae asperiores, magni dicta cumque nemo excepturi soluta id ea maxime? Amet similique rem sapiente dignissimos voluptatibus, est quas.
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quo accusamus beatae asperiores, magni dicta cumque nemo excepturi soluta id ea maxime? Amet similique rem sapiente dignissimos voluptatibus, est quas.
                     </p>
-                    <br/>
-                    <span ref={linkRef}>This Bottom!</span>
+                    <br />
+                    <button className='btn btn-sm btn-primary rounded-0 mb-3' onClick={() => gotoTop(linkRef.current)}>Go To Top</button>
                 </div>
             </div>
         </Fragment>

@@ -6,9 +6,7 @@ const Lat4 = () => {
     const [lastname, setLastname] = useState("")
     const [companyName, setCompanyName] = useState("")
 
-    const handlerSubmit = (e) => {
-        e.preventDefault();
-
+    const handlerSubmit = () => {
         setCompanyName(firstname + " " + lastname)
     }
 
