@@ -26,7 +26,7 @@ function App() {
             <Route path='/latihan-4' element={<Lat4 />} />
             <Route path='/latihan-5' element={<Lat5 />} />
             <Route path='/latihan-6' element={<Lat6 />} />
-            <Route path="*" element={<Error404 />} />
+            <Route path="*" element={<Error404 code="404" status="Page Not Found!" msg="Please back to home!" />} />
           </Routes>
       </div>
     </>
