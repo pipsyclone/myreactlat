@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/myreactlat/static/css/main.a41f22c8.css",
-    "main.js": "/myreactlat/static/js/main.e09a09c0.js",
+    "main.js": "/myreactlat/static/js/main.b130f2cd.js",
     "static/js/787.6235fd57.chunk.js": "/myreactlat/static/js/787.6235fd57.chunk.js",
     "static/media/fa-solid-900.ttf": "/myreactlat/static/media/fa-solid-900.b48ad290d0335879a92b.ttf",
     "static/media/fa-brands-400.ttf": "/myreactlat/static/media/fa-brands-400.f9ee61fab3c11e2f3ed3.ttf",
@@ -13,11 +13,11 @@
     "static/media/fa-v4compatibility.woff2": "/myreactlat/static/media/fa-v4compatibility.745989aab0d69cab7e70.woff2",
     "index.html": "/myreactlat/index.html",
     "main.a41f22c8.css.map": "/myreactlat/static/css/main.a41f22c8.css.map",
-    "main.e09a09c0.js.map": "/myreactlat/static/js/main.e09a09c0.js.map",
+    "main.b130f2cd.js.map": "/myreactlat/static/js/main.b130f2cd.js.map",
     "787.6235fd57.chunk.js.map": "/myreactlat/static/js/787.6235fd57.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a41f22c8.css",
-    "static/js/main.e09a09c0.js"
+    "static/js/main.b130f2cd.js"
   ]
 }
