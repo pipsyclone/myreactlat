@@ -20,6 +20,7 @@ const Navbar = () => {
                         <Link className="nav-link" to={"/latihan-4"}>latihan 4</Link>
                         <Link className="nav-link" to={"/latihan-5"}>latihan 5</Link>
                         <Link className="nav-link" to={"/latihan-6"}>latihan 6</Link>
+                        <Link className="nav-link" to={"/latihan-7"}>latihan 7</Link>
                     </div>
                 </div>
             </div>

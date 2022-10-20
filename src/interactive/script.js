@@ -1,7 +1,19 @@
-import { useState, useRef } from'react'
+import { useState, useEffect, useRef } from'react'
 import dataSepatu from '../dummy/dataSepatu'
 
 const Script = () => {
+    // Check Width
+    const [windowSize, setWindowSize] = useState(window.innerWidth);
+    useEffect(() => {
+        function handleWindowResize() {
+            setWindowSize(window.innerWidth);
+        }
+        window.addEventListener('resize', handleWindowResize);
+        return () => {
+            window.removeEventListener('resize', handleWindowResize);
+        };
+    }, []);
+
     // useRef Go To Top
     const linkRef = useRef(null)
 
@@ -32,11 +44,19 @@ const Script = () => {
         setListItem(listItem + limitItem)
     }
 
+    // Toggler Icon
+    const [topbarToggler, setTopbarToggler] = useState(true)
+    const handlerTopbarTogglerIcon = () => {
+        setTopbarToggler(!topbarToggler)
+    }
+
     // Mengembalikkan hasil dari function yang sudah di deklarasi
     return {
-        linkRef, gotoTop, //useRef Go To Bottom
-        text, color, changeColor, // Chande Color & Text
-        slice, maxItem, handleLoadMore // Load More
+        windowSize,                     // Check Width
+        linkRef, gotoTop,               // useRef Go To Bottom
+        text, color, changeColor,       // Chande Color & Text
+        slice, maxItem, handleLoadMore, // Load More
+        topbarToggler, handlerTopbarTogglerIcon,    // Toggler Icon
     }
 }
 
