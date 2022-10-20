@@ -23,13 +23,13 @@ function App() {
           {/* Load Content */}
           <Routes>
             <Route path='/myreactlat' element={<Home />} />
-            <Route path='/latihan-1' element={<Lat1 name="Apip Rahman Syahidan" hobi="Bultang" />} />
-            <Route path='/latihan-2' element={<Lat2 />} />
-            <Route path='/latihan-3' element={<Lat3 />} />
-            <Route path='/latihan-4' element={<Lat4 />} />
-            <Route path='/latihan-5' element={<Lat5 />} />
-            <Route path='/latihan-6' element={<Lat6 />} />
-            <Route path='/latihan-7' element={<Lat7 />} />
+            <Route path='/myreactlat/latihan-1' element={<Lat1 name="Apip Rahman Syahidan" hobi="Bultang" />} />
+            <Route path='/myreactlat/latihan-2' element={<Lat2 />} />
+            <Route path='/myreactlat/latihan-3' element={<Lat3 />} />
+            <Route path='/myreactlat/latihan-4' element={<Lat4 />} />
+            <Route path='/myreactlat/latihan-5' element={<Lat5 />} />
+            <Route path='/myreactlat/latihan-6' element={<Lat6 />} />
+            <Route path='/myreactlat/latihan-7' element={<Lat7 />} />
             <Route path="*" element={<Error404 code="404" status="Page Not Found!" msg="Please back to home!" />} />
           </Routes>
       </div>
